@@ -1,0 +1,46 @@
+{
+  "name": "ttp-pis-assignment-0-fundamentals-of-js",
+  "version": "1.0.0",
+  "description": "This is a README file. Initial commit.",
+  "main": "index.js",
+  "scripts": {
+    "test-all": "mocha */*.test.js --watch",
+    "test-00": "mocha */greetFriend.test.js --watch",
+    "test-01": "mocha */titleCaseEdit.test.js --watch",
+    "test-02": "mocha */subtractFive.test.js --watch",
+    "test-03": "mocha */cutInHalfAndFloor.test.js --watch",
+    "test-04": "mocha */countOfAllBooleans.test.js --watch",
+    "test-05": "mocha */countOfAllBooleansAndStrings.test.js --watch",
+    "test-06": "mocha */countOfAllNumbersSmallerThanTarget.test.js --watch",
+    "test-07": "mocha */countOfAllIndexMatchingNumbers.test.js --watch",
+    "test-08": "mocha */sumOfAllEvenNumbers.test.js --watch",
+    "test-09": "mocha */sumOfAllOddNumbers.test.js --watch",
+    "test-10": "mocha */sumOfNumsWithinARange.test.js --watch",
+    "test-11": "mocha */sumOfMinimumAndMaximum.test.js --watch",
+    "test-12": "mocha */fizzBuzz.test.js --watch",
+    "test-13": "mocha */isPalindrome.test.js --watch",
+    "test-14": "mocha */frequencyCounter.test.js --watch",
+    "test-15": "mocha */countDownSum.test.js --watch",
+    "test-16": "mocha */productOfAnyAmountOfNumbers.test.js --watch",
+    "test-17": "mocha */setUnionOfAnyAmountOfSets.test.js --watch",
+    "test-18": "mocha */pairSum.test.js --watch",
+    "test-19": "mocha */binarySearch.test.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajLapid718/TTP-PIS-Summer-2020-Assignment-0-Fundamentals-Of-JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajLapid718/TTP-PIS-Summer-2020-Assignment-0-Fundamentals-Of-JavaScript/issues"
+  },
+  "homepage": "https://github.com/ajLapid718/TTP-PIS-Summer-2020-Assignment-0-Fundamentals-Of-JavaScript#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^7.1.2",
+    "moment": "^2.25.1",
+    "sinon": "^9.0.2"
+  }
+}
