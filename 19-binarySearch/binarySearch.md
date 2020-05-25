@@ -59,5 +59,5 @@ The test suite (`binarySearch.test.js`) is ultimately designed to verify six cor
 3) Your instance method should return `false` if the `target` value does not exist in the `nums` input array
 4) Your instance method should return `true` if the `target` value exists in the `nums` input array
 5) In defending against hard-coding, any and all well-formed arguments will lead to sufficient coverage of #3 and #4 (**note**: see the respective test suite for more information)
-6) Your instance method should be written such that there is an overall logarithmic time complexity when processing the input and performing operations throughout the solution code; it should also be implmented recursively
+6) Your instance method should be written such that there is an overall logarithmic time complexity when processing the input and performing operations throughout the solution code; it should also be implemented recursively
 7) The input array `nums` is not mutated
