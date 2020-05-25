@@ -46,7 +46,7 @@ describe("the binarySearch(nums, target) function", function() {
     mySpy.resetHistory();
 
     let exampleArrA = Array.from({ length: 100 });
-    exampleArrA.map((_, idx) => idx + 1);
+    exampleArrA = exampleArrA.map((_, idx) => idx + 1);
     
     submittedSolution.binarySearch(exampleArrA, 2);
     expect(mySpy.callCount).to.be.within(1, Math.ceil(Math.log2(100)));
@@ -54,7 +54,7 @@ describe("the binarySearch(nums, target) function", function() {
     mySpy.resetHistory();
 
     let exampleArrB = Array.from({ length: 1000 });
-    exampleArrB.map((_, idx) => idx + 1);
+    exampleArrB = exampleArrB.map((_, idx) => idx + 1);
 
     submittedSolution.binarySearch(exampleArrB, 2);
     expect(mySpy.callCount).to.be.within(1, Math.ceil(Math.log2(1000)));
