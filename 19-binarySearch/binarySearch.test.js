@@ -41,7 +41,8 @@ describe("the binarySearch(nums, target) function", function() {
     let mySpy = sinon.spy(submittedSolution, "binarySearch");
     
     submittedSolution.binarySearch([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], 1);
-    expect(mySpy.callCount).to.be.within(1, Math.ceil(Math.log2(15)));
+    expect(mySpy.callCount).to.be.greaterThan(1);
+    expect(mySpy.callCount).to.be.closeTo(4,1);
     
     mySpy.resetHistory();
 
@@ -49,7 +50,8 @@ describe("the binarySearch(nums, target) function", function() {
     exampleArrA = exampleArrA.map((_, idx) => idx + 1);
     
     submittedSolution.binarySearch(exampleArrA, 2);
-    expect(mySpy.callCount).to.be.within(1, Math.ceil(Math.log2(100)));
+    expect(mySpy.callCount).to.be.greaterThan(1);
+    expect(mySpy.callCount).to.be.closeTo(Math.log2(100), 5);
 
     mySpy.resetHistory();
 
@@ -57,7 +59,8 @@ describe("the binarySearch(nums, target) function", function() {
     exampleArrB = exampleArrB.map((_, idx) => idx + 1);
 
     submittedSolution.binarySearch(exampleArrB, 2);
-    expect(mySpy.callCount).to.be.within(1, Math.ceil(Math.log2(1000)));
+    expect(mySpy.callCount).to.be.greaterThan(1);
+    expect(mySpy.callCount).to.be.closeTo(Math.log2(1000), 5);
 
     mySpy.resetHistory();
     mySpy.restore();
