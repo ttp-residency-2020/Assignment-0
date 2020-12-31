@@ -1,5 +1,6 @@
 function greetFriend(name) {
-  // Insert code here;
+  String s ="Hello, " + name;
+  return;
 }
 
 // Do not edit this line;
